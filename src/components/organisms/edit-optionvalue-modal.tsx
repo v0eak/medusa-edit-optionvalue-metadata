@@ -32,10 +32,8 @@ const EditOptionvalueModal = ({
     const newMetadata = [...metadata];
 
     if (field === 'key') {
-        // Updating the key
         newMetadata[index].key = e.target.value;
     } else {
-        // Updating the value
         newMetadata[index].value = e.target.value;
     }
     setMetadata(newMetadata);

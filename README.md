@@ -36,4 +36,4 @@ Start the server
 
 
 ## Screenshots
-![App Screenshot](https://github.com/git-Veak/medusa-edit-optionvalue-metadata/assets/51446230/93bff6bc-2237-4628-b553-73f8511fc732)
+![App Screenshot](https://github.com/v0eak/medusa-edit-optionvalue-metadata/assets/51446230/820e4491-dcf4-4443-a397-95c67218f4f6)
