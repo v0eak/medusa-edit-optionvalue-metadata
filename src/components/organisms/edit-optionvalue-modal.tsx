@@ -160,8 +160,8 @@ const EditOptionvalueModal = ({
                 )}
             </div>
             <div className="flex justify-end gap-x-3 mt-base">
-                <Button type="button" variant="secondary" onClick={onClose}>Cancel</Button>
-                <Button type="submit">Save changes</Button>
+                <Button type="button" variant="secondary" onClick={onClose} className="px-2.5 py-1">Cancel</Button>
+                <Button type="submit" className="px-2.5 py-1">Save changes</Button>
             </div>
         </form>
     </div>

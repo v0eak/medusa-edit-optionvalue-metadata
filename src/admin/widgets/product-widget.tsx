@@ -81,7 +81,7 @@ import type {
                   )
                   .map((uniqueVal) => (
                       <li key={uniqueVal.id}>
-                          <Button variant="transparent" onClick={() => handleEditOptionvalue(uniqueVal)} className="border-grey-20 border">
+                          <Button variant="transparent" onClick={() => handleEditOptionvalue(uniqueVal)} className="border-grey-20 border px-2.5 py-1">
                               {uniqueVal.value}
                           </Button>
                       </li>

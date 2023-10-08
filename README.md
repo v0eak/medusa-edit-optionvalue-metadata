@@ -6,7 +6,7 @@ This plugin will most likely run with older versions too, but these dependency v
 ```bash
   "@medusajs/medusa": "^1.16.0",
   "@medusajs/admin": "^7.1.1",
-  "@medusajs/ui": "^1.0.0",
+  "@medusajs/ui": "^2.2.0",
   "react": "^18.2.0"
 ```
 

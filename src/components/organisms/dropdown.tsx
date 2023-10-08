@@ -69,7 +69,7 @@ export default function Dropdown ({
         <div className="flex items-center gap-2">
             <DropdownMenu.Root onOpenChange={isOpen => setOpenDropdownIndex(isOpen ? index : null)}>
                 <DropdownMenu.Trigger asChild>
-                    <Button type="button" variant="secondary" size="small" className="border-0">
+                    <Button type="button" variant="secondary" size="small" className="border-0 px-1.5 py-0.5">
                         <EllipsisVerticalIcon />
                     </Button>
                 </DropdownMenu.Trigger>
