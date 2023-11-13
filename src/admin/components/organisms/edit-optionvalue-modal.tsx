@@ -20,7 +20,6 @@ const EditOptionvalueModal = ({
   product,
   notify,
 }: Props) => {
-    const BASE_URL = process.env.BACKEND_URL;
   const { t } = useTranslation()
   const [metadata, setMetadata] = useState(null);
   const { refetch, options } = useOptionsContext();
@@ -75,7 +74,7 @@ const EditOptionvalueModal = ({
 
     for (let i = 0; i < optionvaluesId.length; i++) {
         try {
-            const response = await fetch(`${BASE_URL}/product-option-values/${optionvaluesId[i]}/metadata`, {
+            const response = await fetch(`http://localhost:9000/product-option-values/${optionvaluesId[i]}/metadata`, {
                 method: 'PUT',
                 credentials: 'include',
                 headers: {
