@@ -24,6 +24,11 @@ Installation
   npm install medusa-edit-optionvalue-metadata
 ```
 
+Set environment variable
+```bash
+  BACKEND_URL=<YOUR_BACKEND_URL>
+```
+
 Add to medusa-config.js
 ```bash
   ///...other plugins
