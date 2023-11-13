@@ -4,7 +4,6 @@
 /uploads
 /node_modules
 yarn-error.log
-.npmignore
 
 .idea
 
@@ -25,3 +24,10 @@ build
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.yarnrc.yml
+
+.github
+.vscode
+.yarn
+.uploads
+.data

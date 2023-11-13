@@ -1,9 +1,13 @@
 {
   "name": "medusa-edit-optionvalue-metadata",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A way to edit the Metadata of each ProductOptionValue.",
   "author": "v0eak",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/v0eak/medusa-edit-optionvalue-metadata"
+  },
   "keywords": [
     "medusa-plugin",
     "medusa-plugin-admin",
@@ -61,8 +65,8 @@
   },
   "peerDependencies": {
     "@medusajs/medusa": "^1.16.0",
-    "@medusajs/admin": "^7.1.1",
     "@medusajs/ui": "^2.2.0",
+    "@medusajs/icons": "^1.0.0",
     "react": "^18.2.0"
   },
   "jest": {

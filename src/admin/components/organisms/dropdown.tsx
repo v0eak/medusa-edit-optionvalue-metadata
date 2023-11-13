@@ -1,9 +1,6 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
 import { Button } from "@medusajs/ui"
-import TrashIcon from "./../fundamentals/icons/trash-icon"
-import ArrowDownIcon from "./../fundamentals/icons/arrow-down-icon"
-import ArrowUpIcon from "./../fundamentals/icons/arrow-up-icon"
-import EllipsisVerticalIcon from "./../fundamentals/icons/ellipsis-vertical-icon"
+import { Trash, ArrowDownMini, ArrowUpMini, EllipsisVertical } from "@medusajs/icons"
 import clsx from "clsx"
 import { useEffect, useState } from "react"
 
@@ -70,19 +67,19 @@ export default function Dropdown ({
             <DropdownMenu.Root onOpenChange={isOpen => setOpenDropdownIndex(isOpen ? index : null)}>
                 <DropdownMenu.Trigger asChild>
                     <Button type="button" variant="secondary" size="small" className="border-0 px-1.5 py-0.5">
-                        <EllipsisVerticalIcon />
+                        <EllipsisVertical />
                     </Button>
                 </DropdownMenu.Trigger>
                 
                 <DropdownMenu.Content asChild sideOffset={8} className="visible z-50">
                     <div className="bg-grey-0 shadow-dropdown border-grey-20 rounded-rounded overflow-hidden border">
                         <DropdownMenu.Item onClick={() => onInsertAbove(index)} className={itemClasses}>
-                            <ArrowUpIcon size={20} />
+                            <ArrowUpMini className="h-5" />
                             <span>Insert above</span>
                         </DropdownMenu.Item>
 
                         <DropdownMenu.Item onClick={() => onInsertBelow(index)} className={itemClasses}>
-                            <ArrowDownIcon size={20} />
+                            <ArrowDownMini className="h-5" />
                             <span>Insert below</span>
                         </DropdownMenu.Item>
                         
@@ -95,7 +92,7 @@ export default function Dropdown ({
                             },
                             itemClasses
                         )}>
-                            <TrashIcon size={20} />
+                            <Trash className="h-5" />
                             <span>Delete</span>
                         </DropdownMenu.Item>
                     </div>

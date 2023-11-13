@@ -2,12 +2,12 @@ import type {
     WidgetConfig, 
     ProductDetailsWidgetProps,
   } from "@medusajs/admin"
-  import { Button } from "@medusajs/ui"
+  import { Container, Heading, Button } from "@medusajs/ui"
 
-  import OptionsProvider, { useOptionsContext } from "./../../components/organisms/options-provider"
+  import OptionsProvider, { useOptionsContext } from "../components/organisms/options-provider"
   import { ProductOptionValue } from "@medusajs/medusa"
   import { useState } from "react"
-  import EditOptionvalueModal from "../../components/organisms/edit-optionvalue-modal"
+  import EditOptionvalueModal from "../components/organisms/edit-optionvalue-modal"
   
   const ProductWidget = ({
     product,
@@ -22,18 +22,20 @@ import type {
 
     return (
       <OptionsProvider product={product}>
-        <div className="bg-white p-8 border border-gray-200 rounded-lg">
-          <h1 className="text-grey-90 inter-xlarge-semibold">Option Values</h1>
-          <ProductOptions handleEditOptionvalue={handleEditOptionvalue} />
-          {optionvalueToEdit && (
-            <EditOptionvalueModal
-              onClose={() => setOptionvalueToEdit(undefined)}
-              optionvalue={optionvalueToEdit}
-              product={product}
-              notify={notify}
-            />
-          )}
-        </div>
+        <Container>
+            <Heading level="h1" className="font-semibold pb-2">
+                <span>Option Values</span>
+            </Heading>
+            <ProductOptions handleEditOptionvalue={handleEditOptionvalue} />
+            {optionvalueToEdit && (
+              <EditOptionvalueModal
+                onClose={() => setOptionvalueToEdit(undefined)}
+                optionvalue={optionvalueToEdit}
+                product={product}
+                notify={notify}
+              />
+            )}
+        </Container>
       </OptionsProvider>
     )
   }

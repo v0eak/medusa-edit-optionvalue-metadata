@@ -124,7 +124,7 @@ const EditOptionvalueModal = ({
   return (
     <div className="pt-5">
         <form onSubmit={submitChange}>
-            <div className="rounded-rounded border-grey-20 divide-grey-20 inter-base-regular divide-y border relative z-10">
+            <div className="rounded-rounded border-grey-20 divide-grey-20 inter-base-regular divide-y border relative z-5">
                 <div className="inter-small-semibold bg-grey-5 rounded-t-rounded divide-grey-20 grid grid-cols-[165px_1fr] divide-x divide-solid [&amp;>div]:px-base [&amp;>div]:py-xsmall">
                     <div>
                         <p>Key</p>
