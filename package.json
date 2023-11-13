@@ -1,6 +1,6 @@
 {
   "name": "medusa-edit-optionvalue-metadata",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A way to edit the Metadata of each ProductOptionValue.",
   "author": "v0eak",
   "license": "MIT",
