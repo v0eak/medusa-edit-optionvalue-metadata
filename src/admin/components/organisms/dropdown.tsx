@@ -59,7 +59,6 @@ export default function Dropdown ({
         } else {
             setIsDisabled(true)
         }
-        console.log(metadata)
       }, [metadata])
 
     return (

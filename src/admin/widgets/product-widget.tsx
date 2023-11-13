@@ -17,7 +17,6 @@ import type {
 
     const handleEditOptionvalue = (optionvalue: ProductOptionValue) => {
       setOptionvalueToEdit(optionvalue)
-      console.log(optionvalue);
     }
 
     return (

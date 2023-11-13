@@ -21,6 +21,7 @@ const EditOptionvalueModal = ({
   notify,
 }: Props) => {
   const { t } = useTranslation()
+  const BACKEND_URL = process.env.MEDUSA_ADMIN_BACKEND_URL;
   const [metadata, setMetadata] = useState(null);
   const { refetch, options } = useOptionsContext();
   const [focusedInput, setFocusedInput] = useState(null);
@@ -74,7 +75,7 @@ const EditOptionvalueModal = ({
 
     for (let i = 0; i < optionvaluesId.length; i++) {
         try {
-            const response = await fetch(`http://localhost:9000/product-option-values/${optionvaluesId[i]}/metadata`, {
+            const response = await fetch(`${BACKEND_URL}/product-option-values/${optionvaluesId[i]}/metadata`, {
                 method: 'PUT',
                 credentials: 'include',
                 headers: {

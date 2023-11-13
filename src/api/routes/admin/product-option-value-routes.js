@@ -4,7 +4,6 @@ import { MedusaError } from "@medusajs/utils"
 export default {
   register(router) {
     router.put("/product-option-values/:id/metadata", async (req, res) => {
-      console.log('Endpoint hit', req.body);
       const { id } = req.params;
       const { metadata } = req.body;
 
